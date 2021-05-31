@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://example.com">
+  <link rel="dns-prefetch" href="https://bamboo-cutter.github.io">
   <title>这河里吗??</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="好耶">
 <meta property="og:type" content="website">
 <meta property="og:title" content="这河里吗??">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="https://bamboo-cutter.github.io/index.html">
 <meta property="og:site_name" content="这河里吗??">
 <meta property="og:description" content="好耶">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="竹取">
-<meta property="article:tag" content="我不爱学习">
+<meta property="article:tag" content="我爱学习">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="这河里吗??" type="application/atom+xml">
@@ -42,11 +42,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #ffffff"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1488903379,3921306945&amp;fm=15&amp;gp=0.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -82,11 +82,11 @@
 				
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+					<a class="qq" target="_blank" href="https://user.qzone.qq.com/908482589/infocenter" title="qq"><i class="icon-qq"></i></a>
 		        
 			</div>
 		</nav>
@@ -97,14 +97,14 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #ffffff"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1488903379,3921306945&amp;fm=15&amp;gp=0.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -123,11 +123,11 @@
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="qq" target="_blank" href="https://user.qzone.qq.com/908482589/infocenter" title="qq"><i class="icon-qq"></i></a>
 			        
 				</div>
 			</nav>
@@ -155,6 +155,327 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux-note2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/31/linux-note2/">linux note 2</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/31/linux-note2/" class="archive-article-date">
+  	<time datetime="2021-05-31T15:12:55.861Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-VMware虚拟机的安装与使用"><a href="#1-VMware虚拟机的安装与使用" class="headerlink" title="1.VMware虚拟机的安装与使用"></a>1.VMware虚拟机的安装与使用</h1><h1 id="2-系统分区"><a href="#2-系统分区" class="headerlink" title="2.系统分区"></a>2.系统分区</h1><h3 id="1-磁盘分区"><a href="#1-磁盘分区" class="headerlink" title="1.磁盘分区"></a>1.磁盘分区</h3><p>1.主分区：4</p>
+<p>2.扩展分区：1   主+扩最多4  扩展分区不能写入数据，也不能格式化，只能包含逻辑分区</p>
+<p>3.逻辑分区</p>
+<h3 id="2-格式化"><a href="#2-格式化" class="headerlink" title="2.格式化"></a>2.格式化</h3><p>指高级格式化，又称逻辑格式化，写入文件系统，（EXT4)(把柜子分区，必须遵守某种规则，例如EXT4就是把柜子分成等大小的数据块block，默认4kb)（有一种功能叫磁盘碎片整理，就是整理不同柜子放的衣服，令他们挨得近一点，好拿）<strong>会顺便清空所有数据</strong></p>
+<p>格式化可以把数据块编号成为    inode 索引节点</p>
+<h3 id="3-硬件设备文件名"><a href="#3-硬件设备文件名" class="headerlink" title="3.硬件设备文件名"></a>3.硬件设备文件名</h3><p>Linux  在分配盘幅（？）之前，要给每一个分区起一个<strong>硬件文件名</strong>，<em>所有硬件设备都是文件</em></p>
+<p>/<strong>根目录</strong></p>
+<p>一级子目录</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210516201831744.png" alt="image-20210516201831744"></p>
+<p><strong>1.2.3.4只能给主分区或扩展分区，不能给逻辑分区</strong></p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210516202609289.png" alt="image-20210516202609289"></p>
+<h3 id="4-挂载"><a href="#4-挂载" class="headerlink" title="4.挂载"></a>4.挂载</h3><p>分配盘幅的过程，及分配挂载点</p>
+<p>必须分区**/根分区,swap分区（虚拟内存不超过2GB）**</p>
+<p>推荐分区<strong>boot</strong> 启动分区200MB</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210516203132463.png" alt="image-20210516203132463"></p>
+<p>挺牛，子目录可以有独立硬盘空间</p>
+<h1 id="3-Linux系统安装"><a href="#3-Linux系统安装" class="headerlink" title="3.Linux系统安装"></a>3.Linux系统安装</h1><p>没有光驱！！！！！！正在找办法安装</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210517202256626.png" alt="image-20210517202256626"></p>
+<p>安装成功！</p>
+<p>配置完成！！</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210517213521246.png" alt="image-20210517213521246"></p>
+<p>.cfg是以Kickstart配置文件的格式记录安装过程中设置的选项信息</p>
+<h1 id="4-远程登陆管理工具"><a href="#4-远程登陆管理工具" class="headerlink" title="4.远程登陆管理工具"></a>4.远程登陆管理工具</h1><h3 id="1-网络连接"><a href="#1-网络连接" class="headerlink" title="1.网络连接"></a>1.网络连接</h3><p>桥接：利用真实网卡(配置简单，同一网段IP地址 但需要网段IP，可能IP地址冲突)</p>
+<p>NET(通过网卡8)(但也可以联网)</p>
+<p>Host-only(通过网卡1)(只能和自己的电脑通信，无法和局域网)</p>
+<h4 id="1-查询网卡信息"><a href="#1-查询网卡信息" class="headerlink" title="1.查询网卡信息"></a>1.查询网卡信息</h4><p>选择NET</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210518235240564.png" alt="image-20210518235240564"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ifconfig(Linux)(interface网卡 configuer配置)</span><br><span class="line">ipconfig(Windows)</span><br><span class="line">lo(Loopback回路 adaptor)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>弹幕说高版本用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip addr代替</span><br></pre></td></tr></table></figure>
+
+<p>十二点了明天再看</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/31/linux-note2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-linux-note1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/31/linux-note1/">linux note 1</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/31/linux-note1/" class="archive-article-date">
+  	<time datetime="2021-05-31T15:12:55.859Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-UNIX-Linux发展史"><a href="#1-UNIX-Linux发展史" class="headerlink" title="1.UNIX Linux发展史"></a>1.UNIX Linux发展史</h2><p>UNIX父    unity   后来用C语言重写     图灵奖  TCP-IP协议</p>
+<p>发行版本 4种  在AIX HP Solaris Linux</p>
+<p>Linux子  类UNIX操作系统 Linus Torvalds    发行版/内核官网<a target="_blank" rel="noopener" href="http://www.kernel.org/">www.kernel.org</a> 厂商自己加应用程序变成发行版redhat/debian软件安装不一致   有的收费什么的，最后选择Centos</p>
+<h2 id="2-开源软件介绍"><a href="#2-开源软件介绍" class="headerlink" title="2.开源软件介绍"></a>2.开源软件介绍</h2><p>商业软件/开源软件（Python  Apache）(自由使用 可获得源代码 散布和改良的自由)（安全）</p>
+<h3 id="LAMP"><a href="#LAMP" class="headerlink" title="LAMP"></a>LAMP</h3><p>Linux 操作系统</p>
+<p>Apache Web服务器</p>
+<p>MySQL数据库</p>
+<p>PHP编程语言 通用开源脚本语言，混合多种语法</p>
+<h2 id="3-Linux-应用领域"><a href="#3-Linux-应用领域" class="headerlink" title="3.Linux 应用领域"></a>3.Linux 应用领域</h2><h3 id="基于Linux的企业服务器"><a href="#基于Linux的企业服务器" class="headerlink" title="基于Linux的企业服务器"></a>基于Linux的企业服务器</h3><p><a target="_blank" rel="noopener" href="http://www.netcraft.com(扫描和踩点网站)(我给你发数据包,你给我响应,从而分析服务器)(黑客要用)/">www.netcraft.com(扫描和踩点网站)（我给你发数据包，你给我响应，从而分析服务器）（黑客要用）</a></p>
+<p>Linux的应用很广（安卓也是Linux）</p>
+<h3 id="嵌入式应用"><a href="#嵌入式应用" class="headerlink" title="嵌入式应用"></a>嵌入式应用</h3><p>手机和平板（安卓）</p>
+<p>智能家电，航空银行系统，卡拉OK点歌系统等</p>
+<h3 id="Linux在电影娱乐"><a href="#Linux在电影娱乐" class="headerlink" title="Linux在电影娱乐"></a>Linux在电影娱乐</h3><p>图形工作！电影等</p>
+<h2 id="4-Linux学习方法"><a href="#4-Linux学习方法" class="headerlink" title="4.Linux学习方法"></a>4.Linux学习方法</h2><p>命令行（字符界面）</p>
+<p>百度查和Linux本身资源</p>
+<p>英语！！Command not found      No Such file or directory</p>
+<p>计划 坚持 专注 练习</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/31/linux-note1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hexo-try" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/31/hexo-try/">关于hexo搭建</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/31/hexo-try/" class="archive-article-date">
+  	<time datetime="2021-05-31T15:03:37.405Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-第一天"><a href="#1-第一天" class="headerlink" title="1.第一天"></a>1.第一天</h2><p>我选用的是B站CodeSheep的教程和一些杂乱的教程糅合搭建。第一天进度为2/7</p>
+<p>hexo是什么，百度说是博客框架，什么是博客框架，似乎是一个属于自己的小页面？可能是这么理解</p>
+<p>教程中采用的是Mac，Windos实际上有一些差别，所以也查找了其他的教程，重点部分在于使用cmd,用管理员运行cmd还是下图的Git Bash Here</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210523215633838.png" alt="image-20210523215633838"></p>
+<p>第一天的搭建几乎只有Git有效，cmd说我错误，只有查找版本的时候可以用</p>
+<p>![img](file:///C:\Users\asus\Documents\Tencent Files\908482589\Image\C2C\CD4327FC75BE694CEA4C740510F84ECA.jpg)</p>
+<p>老实说我完全没明白，总之就是用下面这个</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210523215951991.png" alt="image-20210523215951991"></p>
+<p>然后照着视频来</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210523220128733.png" alt="image-20210523220128733"></p>
+<p>所以其实我前面的Git也很迷</p>
+<p>第一天OVER</p>
+<h2 id="2-第二天"><a href="#2-第二天" class="headerlink" title="2.第二天"></a>2.第二天</h2><p>个人认为两种命令并无很大区别？</p>
+<p>安装博客主要还是采用了（如何优雅的使用exo搭建博客这个视频）</p>
+<p>codesheep的视频经常会出错</p>
+<p>最后采用上面说的那个视频搭建</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210525112917552.png" alt="image-20210525112917552"></p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210525112930276.png" alt="image-20210525112930276"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hexo 命令</span><br><span class="line"><span class="function">hexo <span class="title">generate</span><span class="params">(hexo g)</span>    会在<span class="keyword">public</span>目录里生成静态文件</span></span><br><span class="line"><span class="function">hexo clean 将<span class="keyword">public</span>和db.json删除</span></span><br><span class="line"><span class="function">hexo new page+页面名<span class="params">(first)</span>  会在source目录下生成  ^^^ 目录，代表一个页面</span></span><br><span class="line"><span class="function">就可以通过http:<span class="comment">//localhost:4000/页面名  </span></span></span><br><span class="line"><span class="function">进行访问</span></span><br><span class="line"><span class="function">hexo new 文章名 会在source/_posts下新建   ^^^.md</span></span><br><span class="line"><span class="function">hexo <span class="title">server</span><span class="params">(hexo s)</span> 启动服务器，默认端口4000</span></span><br><span class="line"><span class="function">ctrl+c停止服务器</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function">    </span></span><br></pre></td></tr></table></figure>
+
+<p>静态文件 用于最后部署<img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210526182139451.png" alt="image-20210526182139451"></p>
+<p>生成页面</p>
+<p><img src="C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20210526182854849.png" alt="image-20210526182854849"></p>
+<h2 id="3-第三天"><a href="#3-第三天" class="headerlink" title="3.第三天"></a>3.第三天</h2><p>node _models 是存放依赖的，如果删除了通过npm install重新安装</p>
+<p>scaffolds是模板文件就=夹，生成文件是根据这个建立</p>
+<p>（可以修改格式然后换主题）</p>
+<p>source资源文件夹存放用户资源</p>
+<p>_posts下存放新建文章</p>
+<p>themes下存放主题文件</p>
+<p>_config.yml是网站配置文件，存放网站信息</p>
+<p>.gitignore是git忽略上传的文件？</p>
+<p>db.json存放网站数据</p>
+<p>package.json存放应用程序信息 如安装依赖和版本和指令</p>
+<p>链接咱们弄出来啦！<a href="https://bamboo-cutter.github.io/">https://bamboo-cutter.github.io/</a></p>
+<p>这个链接是我的了！！！！！！！！！！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/31/hexo-try/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-c" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> MY C# NOTES!!</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/31/c/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -175,7 +496,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hi,这个可以用中文吗？<br>这个可以用来整活吗。<br>这里是竹取，她的代码一直在报错，太难了。<br>以至于她捣鼓了一个小时都没把头像传上去。<br>饿了，想吃饭，但外头太阳太大了！<br>上传文字又报错了</p>
+        <p>hi,这个可以用中文吗？<br>这个可以用来整活吗。<br>这里是竹取，她的代码一直在报错，太难了。<br>以至于她捣鼓了一个小时都没把头像传上去。</p>
 
       
 
@@ -465,7 +786,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">正在熟悉中...</div>
   	  	
     	</section>
     
